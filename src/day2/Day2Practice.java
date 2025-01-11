@@ -9,7 +9,7 @@ public class Day2Practice {
 //        int number1 = 2025;
 //        System.out.print("출생 연도를 입력하세요:");
 //        int i = sc.nextInt();
-//        System.out.println("당신의 나이는 = " + (number1 - i));
+//        System.out.println("당신의 나이는 = " + (number1 - i)); hi
         System.out.print("첫 번째 숫자를 입력하세요: ");
         int i = sc.nextInt();
 
