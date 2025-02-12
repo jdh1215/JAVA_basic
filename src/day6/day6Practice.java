@@ -29,6 +29,8 @@ public class day6Practice {
 //
 //        }
 //        System.out.println("최종합계: " + result);
+
+        //hello
         System.out.println("삼각형의 높이를 입력하세요: ");
         int h = sc.nextInt();
         for (int i = 1; i <= h; i++) {
