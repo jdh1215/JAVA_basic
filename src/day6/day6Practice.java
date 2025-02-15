@@ -31,14 +31,32 @@ public class day6Practice {
 //        System.out.println("최종합계: " + result);
 
         //hello
+//        System.out.println("삼각형의 높이를 입력하세요: ");
+//        int h = sc.nextInt();
+//        for (int i = 1; i <= h; i++) {
+//            for(int j = 1; j <= i; j++) {
+//                System.out.print('*');
+//
+//            }
+//            System.out.println();
+//        }
+        //4번문제
         System.out.println("삼각형의 높이를 입력하세요: ");
         int h = sc.nextInt();
-        for (int i = 1; i <= h; i++) {
-            for(int j = 1; j <= i; j++) {
-                System.out.print('*');
+        int t = 0;
+        for (int i = 1; i <=h; i++) {
+            for (int j = h -1; j >= i; j--) {
+                System.out.print(" ");
+
+            }
+
+            for (int j = 1; j <=(i + t) ; j++) {
+
+                    System.out.print('*');
 
             }
             System.out.println();
+            t++;
         }
     }
 }
