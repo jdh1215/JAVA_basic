@@ -11,7 +11,7 @@ public class Day12Book {
     }
 
     public void rentBook() {
-        if (isRented == false) {
+        if (!isRented) {
             this.isRented = true;
             System.out.println(this.title + "이(가) 대여되었습니다.");
         } else {
@@ -19,7 +19,12 @@ public class Day12Book {
         }
     }
 
+    public void print() {
+        String s = isRented ? "대여중": "대여 가능";
+        System.out.println("제목: " + title + ", 대여 상태: " + s );
+    }
 
-
-
+    public String getTitle() {
+        return title;
+    }
 }
