@@ -8,7 +8,11 @@ public class Day13Animal {
     }
 
     public void makeSound() {
-        System.out.println("동물이 소리를 냅니다.");
+        System.out.println(name + "이 소리를 냅니다.");
+    }
+
+    public void eat() {
+        System.out.println(name + "이 먹이를 먹습니다.");
     }
 }
 
