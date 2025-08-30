@@ -7,14 +7,16 @@ public class Reservation {
     private String Department;
     private String diseasename;
     private String payment;
+    private  int price;
 
-    public Reservation(String name, String birthday, String bloodtype, String department, String diseasename, String payment) {
+    public Reservation(String name, String birthday, String bloodtype, String department, String diseasename, String payment , int price) {
         this.name = name;
         this.birthday = birthday;
         this.bloodtype = bloodtype;
         Department = department;
         this.diseasename = diseasename;
         this.payment = payment;
+        this.price = price;
     }
 
     public String getName() {
@@ -63,5 +65,13 @@ public class Reservation {
 
     public void setPayment(String payment) {
         this.payment = payment;
+    }
+
+    public int getPrice() {
+        return price;
+    }
+
+    public void setPrice(int price) {
+        this.price = price;
     }
 }
