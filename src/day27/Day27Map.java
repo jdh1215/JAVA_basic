@@ -5,9 +5,9 @@ public class Day27Map {
     public static void main(String[] args) {
         Map<String, Integer> gradeMap = new HashMap<>();
 
-        gradeMap.put("철희", 85);
+        gradeMap.put("철수", 85);
         gradeMap.put("영희", 92);
-        gradeMap.put("민수", 78);
+        gradeMap.put("진우", 10);
 
         int yeongScore = gradeMap.get("영희");
         System.out.println("영희와 철수 ->" + yeongScore);
@@ -21,6 +21,14 @@ public class Day27Map {
         for (Map.Entry<String, Integer> entry : gradeMap.entrySet()) {
             System.out.println(entry.getKey() + "->" + entry.getValue());
         }
+
+        System.out.println("\nkeySet()으로 다시 출력");
+        for (String name : gradeMap.keySet()) {
+            System.out.println(name + "->" + gradeMap.get(name));
+        }
+
+        gradeMap.clear();
+        System.out.println("\nclear() 후 Map 크기 ->" + gradeMap.size());
 
     }
 }
